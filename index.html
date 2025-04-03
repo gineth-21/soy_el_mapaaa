@@ -19,7 +19,7 @@
       //maptilersdk.config.apiKey = 'YOUR_MAPTILER_API_KEY_HERE';
       const map = new maptilersdk.Map({
         container: 'map', // container's id or the HTML element to render the map
-        style:  'https://api.maptiler.com/maps/0195f90d-4b73-71f4-bd5e-eb92bbdc5fe7/style.json?key=d7DjirpjayoQuVI4HPqMmaptilersdk.MapStyle.SATELLITE',
+        style:  'https://api.maptiler.com/maps/0195f90d-4b73-71f4-bd5e-eb92bbdc5fe7/style.json?key=d7DjirpjayoQuVI4HPqM',
         center: [127.8936830846596,36.413812964498256], // starting position [lng, lat]
         zoom: 0.75, // starting zoom
         projection: 'globe' //enable globe projection
@@ -42,15 +42,13 @@
           originalPlaneID,
           "gata.glb",
           {
-            scale: 1000,
-            altitude: 1000000,
+            scale: 100000,
             heading: 55,
             altitudeReference: maptiler3d.AltitudeReference.MEAN_SEA_LEVEL,
             lngLat: [-2.548828,42.617791]
           }
         );
 
-        layer3D.cloneMesh(originalDuckID, `${originalDuckID}_1`, {lngLat: [-26.298828,28.226970], scale: 400000});
 
       })();
   </script>
